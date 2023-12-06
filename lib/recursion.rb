@@ -1,12 +1,12 @@
-def countdown(n)
+def countdown(number)
 
 end
 
-def get_sum(array)
+def get_sum(numbers)
 
 end
 
-def factorial(n)
+def factorial(number)
 
 end
 
@@ -26,30 +26,30 @@ def upcase(string)
 
 end
 
-def sum_of_digits(n)
+def sum_of_digits(number)
 
 end
 
-def in_stock?(array, target)
+def in_stock?(inventory, item)
 
 end
 
-def find_max(array)
+def find_max(numbers)
 
 end
 
-def number_of_zeroes(array)
+def number_of_zeroes(numbers)
 
 end
 
-def just_positives(array)
+def just_positives(numbers)
 
 end
 
-def number_of_occurrences(array, target)
+def number_of_occurrences(elements, target)
 
 end
 
-def fibonacci(n)
-  
+def fibonacci(number)
+
 end
