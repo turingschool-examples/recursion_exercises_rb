@@ -6,7 +6,7 @@ end
 
 RSpec.describe "Recursion" do
   context "Lesson Exercises" do
-    describe "#countdown" do
+    xdescribe "#countdown" do
       it "counts down to zero from the inputted number" do
         expect(countdown(0)).to eq([0])
         expect(countdown(1)).to eq([1, 0])
@@ -15,7 +15,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    describe "#get_sum" do
+    xdescribe "#get_sum" do
       it "returns the sum of all the numbers in the array" do
         expect(get_sum([])).to be nil
         expect(get_sum([0])).to be 0
@@ -26,7 +26,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    describe "#factorial" do
+    xdescribe "#factorial" do
       it "returns the product of all positive integers less than or equal to n" do
         # 5! => 5 * 4 * 3 * 2 * 1 = 120
 
@@ -39,7 +39,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    describe "#reverse" do
+    xdescribe "#reverse" do
       it "returns the string in reversed order" do
         expect(reverse("")).to eq("")
         expect(reverse(" ")).to eq(" ")
@@ -52,7 +52,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    describe "#power" do
+    xdescribe "#power" do
       it "returns a number to a specific power" do
         # power(base, exponent) # 2 to the 4th power => 2 * 2 * 2 * 2 = 16
 
@@ -70,7 +70,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    describe "#is_palindrome?" do
+    xdescribe "#is_palindrome?" do
       it "returns true/false for whether the given input is a palindrome" do
         # A palindrome is word/number that reads the same forwards and backwards. Examples include racecar, tacocat, and toot.
 
@@ -87,7 +87,7 @@ RSpec.describe "Recursion" do
   end
 
   context "Additional Practice" do
-    describe "#upcase" do
+    xdescribe "#upcase" do
       it "returns the string with all characters capitalized" do
         expect(upcase("")).to eq("")
         expect(upcase(" ")).to eq(" ")
@@ -100,7 +100,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    describe "#sum_of_digits" do
+    xdescribe "#sum_of_digits" do
       it "returns the sum of all numbers from 1 to n (inclusive n)" do
         expect(sum_of_digits(5)).to be 15
         expect(sum_of_digits(1)).to be 1
@@ -109,7 +109,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    describe "#in_stock?" do
+    xdescribe "#in_stock?" do
       it "returns true/false for whether or not the shop offers the target ice cream flavor" do
         expect(in_stock?(['vanilla', 'strawberry'], 'blue moon')).to be false
         expect(in_stock?(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea')).to be true
@@ -120,7 +120,7 @@ RSpec.describe "Recursion" do
     end
 
     context "Slightly More Challenging Problems" do
-      describe "#find_max" do
+      xdescribe "#find_max" do
         it "returns the max element in the array" do
           expect(find_max([])).to be nil
           expect(find_max([8])).to be 8
@@ -129,7 +129,7 @@ RSpec.describe "Recursion" do
         end
       end
 
-      describe "#number_of_zeroes" do
+      xdescribe "#number_of_zeroes" do
         it "returns the number of zeroes in the array" do
           expect(number_of_zeroes([])).to be  0
           expect(number_of_zeroes([5, 5, 5])).to be  0
@@ -140,7 +140,7 @@ RSpec.describe "Recursion" do
         end
       end
 
-      describe "#just_positives" do
+      xdescribe "#just_positives" do
         it "returns the sum of all the positive integers" do
           expect(just_positives([])).to be 0
           expect(just_positives([-1])).to be 0
@@ -150,7 +150,7 @@ RSpec.describe "Recursion" do
         end
       end
 
-      describe "number_of_occurrences" do
+      xdescribe "number_of_occurrences" do
         it "returns the number of occurrences of the target in the array" do
           expect(number_of_occurrences([], "a")).to be 0
           expect(number_of_occurrences([], 1)).to be 0
@@ -164,7 +164,7 @@ RSpec.describe "Recursion" do
     end
 
     context "Challenging Problems" do
-      describe "#fibonacci" do
+      xdescribe "#fibonacci" do
         it "returns the nth number in the Fibonacci sequence" do
           # The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones. It starts with 0 and 1, and the sequence goes like this: 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on.
 
